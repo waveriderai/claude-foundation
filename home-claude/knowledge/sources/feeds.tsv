@@ -1,0 +1,12 @@
+# Machine-readable check targets for the sensor (check-sources.py). name<TAB>kind<TAB>url
+# kind: github (api repos), feed (rss/atom), html (page hash). Edit freely; keep tabs.
+karpathy	github	https://api.github.com/users/karpathy/repos?sort=pushed&per_page=10
+simon-willison	feed	https://simonwillison.net/atom/everything/
+anthropic-engineering	html	https://www.anthropic.com/engineering
+boris-cherny	github	https://api.github.com/users/bcherny/repos?sort=pushed&per_page=10
+birgitta-bockeler	html	https://birgitta.info/
+matt-pocock	html	https://www.mattpocock.com/
+addy-osmani	github	https://api.github.com/users/addyosmani/repos?sort=pushed&per_page=10
+lance-martin	html	https://rlancemartin.github.io/
+martin-fowler	feed	https://martinfowler.com/feed.atom
+swyx-latent-space	feed	https://www.latent.space/feed

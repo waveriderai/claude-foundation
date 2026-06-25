@@ -1,0 +1,3 @@
+# sensor machine-state (changes constantly; not knowledge)
+sources/last-seen.json
+sources/last-seen.json.new

@@ -1,0 +1,11 @@
+{
+  "name": "claude-foundation",
+  "owner": { "name": "claude-foundation" },
+  "plugins": [
+    {
+      "name": "claude-foundation",
+      "source": "./plugin/claude-foundation",
+      "description": "Anti-drift hooks + the new-project / ingest-source / learn-from-thinkers / optimize-prompt / validate-idea skills."
+    }
+  ]
+}

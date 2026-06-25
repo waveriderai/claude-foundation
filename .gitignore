@@ -1,0 +1,6 @@
+# Never ship personal/secret state — the repo only contains the framework.
+.DS_Store
+*.backup.*
+home-claude/knowledge/sources/last-seen.json
+home-claude/knowledge/sources/last-seen.json.new
+home-claude/logs/
