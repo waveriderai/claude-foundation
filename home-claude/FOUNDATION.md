@@ -38,6 +38,10 @@ PROJECT  <any work repo>/            inherits global + its own north-star.md & .
   `deep-research` skill. Run `scripts/sync-plugin.sh` after editing it so the plugin mirror stays in sync;
   `scripts/doctor.sh` checks parity + that no skill/workflow is referenced-but-not-shipped.
 
+**Doctors:** `scripts/doctor.sh` checks the *repo* (parity + phantom refs, CI-safe). `scripts/selfcheck.sh`
+checks an *installed* `~/.claude` (tools, skills, skill/workflow deps, hooks, proof-gate, knowledge,
+statusline) — run after `install.sh` so a half-finished install can't pass silently.
+
 ## How to add something new (the convention)
 1. Build & test it in the lab (`~/projects/wiki-loop-lab/`).
 2. Prove it (a loop score, or it works end-to-end).
