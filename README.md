@@ -1,5 +1,7 @@
 # claude-foundation
 
+*([繁體中文版 / Traditional Chinese](README.zh-TW.md))*
+
 A reusable **Claude Code foundation** — an "anti-drift personal AI OS" you can drop into any machine.
 Clone it, run one script, and you get the same global setup: working principles, anti-drift hooks,
 a knowledge wiki, a set of skills, and a statusline.
@@ -43,6 +45,53 @@ knowledge wiki, or statusline):
 ```
 /plugin marketplace add <this-repo-url-or-local-path>
 /plugin install claude-foundation@claude-foundation
+```
+
+## Using it — what each piece does
+
+The whole design is **anti-drift** (stay locked on the goal) + **proof over claims** (prove "done"
+with evidence, not assertions).
+
+### Runs automatically (active the moment you install — nothing to remember)
+
+| Feature | Fires when | What it does |
+|---|---|---|
+| **load-north-star** | every new session / resume / clear | Injects the current project's `north-star.md` into context so Claude always knows the goal & constraints. |
+| **re-anchor** | every 10 prompts | Forces a one-line checkpoint: restate the goal, confirm the work still advances it, flag any drift. Tune with `REANCHOR_EVERY`. |
+| **proof-gate** | on `git push` / `gh pr merge` / `npm publish` etc. | If no test ran this session, it **blocks** and tells you to test first. Re-running the same command proceeds (conscious override). |
+
+Also installed: the **CLAUDE.md** working principles (every project inherits plan→review→execute,
+honesty/verification, right-tool-for-the-job) and the **statusline** (model / context% / 5h & 7d usage).
+
+### Skills you invoke with `/`
+
+| Skill | Use when | One-liner |
+|---|---|---|
+| `/new-project` | starting a new project/repo | Scaffolds `north-star.md` + `.claude/` so the north-star hook has something to inject. |
+| `/validate-idea` | you have a product/startup idea and wonder "should I build it?" | Runs the demand-validation playbook (Mom Test questions, fake-door test, thin MVP) → honest go/no-go. |
+| `/ingest-source` | you find a great article/repo/person to keep | Researches it, extracts the *thinking* (not raw text), writes one knowledge-wiki page. |
+| `/learn-from-thinkers` | you want to refresh your knowledge base | Checks tracked AI thinkers for new material, ingests only what's new, reports where it plugs in. |
+| `/optimize-prompt` | tuning a reusable prompt and you have a testset | Ratchet loop: propose a change → score → keep only if better → bake the winner into a skill. |
+
+### The knowledge wiki — your external brain
+
+`~/.claude/knowledge/` ships reference pages (context engineering, honest AI, demand validation,
+per-thinker distillations…). Claude consults `knowledge/index.md` when you ask "how should I approach
+X / how would <person> think about this". Read it directly, or keep growing it with `/ingest-source`.
+
+### Optional: daily self-learning
+
+`scripts/daily-learn.sh` + `check-sources.py` is a **token-thrifty** auto-learn job: a free no-LLM
+sensor checks tracked sources over plain HTTP first; Claude only runs when something actually changed
+(quiet days cost 0 tokens). Enable it by wiring it to cron/launchd with the `claude` CLI on PATH
+(or `CLAUDE_BIN` set).
+
+### A typical flow
+
+```
+install → /new-project (set the goal) → work (north-star + re-anchor keep you on track)
+→ /validate-idea before building → /ingest-source to bank what you learn
+→ proof-gate forces tests before you push → done
 ```
 
 ## What it deliberately does NOT ship
