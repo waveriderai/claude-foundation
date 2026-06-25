@@ -11,7 +11,7 @@ sid="$(printf '%s' "$input" | python3 -c "import sys,json
 try: print(json.load(sys.stdin).get('session_id','default'))
 except Exception: print('default')" 2>/dev/null || echo default)"
 
-dir="${TMPDIR:-/tmp}/claude-reanchor"
+dir="${HOME:-/tmp}/.claude/cache/reanchor"
 mkdir -p "$dir"
 cf="$dir/$sid"
 count=0
