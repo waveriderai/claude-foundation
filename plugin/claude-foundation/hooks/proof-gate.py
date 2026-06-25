@@ -70,7 +70,7 @@ def main():
     # No tests ran. Deny once; allow on immediate re-run (conscious override).
     sid = data.get("session_id", "s")
     key = hashlib.sha1((sid + "|" + cmd).encode("utf-8")).hexdigest()
-    d = os.path.join(os.environ.get("TMPDIR", "/tmp"), "claude-proofgate")
+    d = os.path.join(os.environ.get("HOME", "/tmp"), ".claude", "cache", "proofgate")
     os.makedirs(d, exist_ok=True)
     marker = os.path.join(d, key)
     if os.path.exists(marker):
