@@ -14,7 +14,7 @@ This is a **framework, not personal data**. It ships no credentials, history, se
 |---|---|---|
 | Working principles | `home-claude/CLAUDE.md` | Global how-we-work rules (plan→review→execute, honesty/verification, tool choice). |
 | The map | `home-claude/FOUNDATION.md` | Index of all capabilities and where new things plug in. |
-| Skills | `home-claude/skills/` | `new-project`, `ingest-source`, `learn-from-thinkers`, `optimize-prompt`, `validate-idea`. |
+| Skills | `home-claude/skills/` | `new-project`, `ingest-source`, `learn-from-thinkers`, `optimize-prompt`, `validate-idea`, `design-taste`. |
 | Hooks | `home-claude/hooks/` | `load-north-star` (inject project goal), `re-anchor` (periodic drift check), `proof-gate` (block untested push/merge). |
 | Knowledge wiki | `home-claude/knowledge/` | Reference pages on context engineering, honest AI, demand validation, autonomous research, etc. |
 | Project template | `home-claude/templates/north-star.md` | Goal/constraints scaffold the `new-project` skill uses. |
@@ -72,6 +72,7 @@ honesty/verification, right-tool-for-the-job) and the **statusline** (model / co
 | `/ingest-source` | you find a great article/repo/person to keep | Researches it, extracts the *thinking* (not raw text), writes one knowledge-wiki page. |
 | `/learn-from-thinkers` | you want to refresh your knowledge base | Checks tracked AI thinkers for new material, ingests only what's new, reports where it plugs in. |
 | `/optimize-prompt` | tuning a reusable prompt and you have a testset | Ratchet loop: propose a change → score → keep only if better → bake the winner into a skill. |
+| `/design-taste` | building/restyling anything visual (UI, landing page, generated assets, brand) | Forces non-generic, intentional design — subject-grounds it, runs an "AI tell" forbid-list, one bold move + restraint. Pairs with the official `frontend-design` plugin for web-UI craft. |
 
 ### The knowledge wiki — your external brain
 

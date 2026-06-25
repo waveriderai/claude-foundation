@@ -16,6 +16,8 @@ Each ingest should EXTRACT the thinking (mental models, decisions, taste), not c
 | Martin Fowler | martinfowler.com (AI-assisted dev, VibeSec) | [[thinkers/martin-fowler]] |
 | swyx / Latent Space | latent.space, swyx.io (frontier-practitioner interviews) | [[thinkers/swyx-latent-space]] |
 | Tobi Lütke (Shopify CEO) | X (@tobi), Shopify memos/letters (org-level AI adoption, ambition) | [[thinkers/tobi-lutke]] |
+| Rauno Freiberg | rauno.me, interfaces.rauno.me (Web Interface Guidelines), X, Vercel work | [[thinkers/rauno-freiberg]] |
+| Emil Kowalski | emilkowal.ski (blog + "Animations on the Web"), X (design-engineering taste/motion) | [[thinkers/emil-kowalski]] |
 
 <!-- Pages under pages/thinkers/ are created on first ingest by learn-from-thinkers. -->
 <!-- candidates queue: see sources/candidates.md -->>

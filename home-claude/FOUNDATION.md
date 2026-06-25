@@ -28,6 +28,7 @@ PROJECT  <any work repo>/            inherits global + its own north-star.md & .
 - `learn-from-thinkers` — ingest tracked sources, report what's new + where it plugs in.
 - `optimize-prompt` — the prompt-opt ratchet loop (one-time factory → bake winner into a Skill).
 - `validate-idea` — run the demand-validation playbook on an idea → honest go/no-go (from [[demand-validation]]).
+- `design-taste` — apply distinctive, non-AI-default taste to any UI/prototype/pipeline/brand (from [[design-taste]]; builds on the `frontend-design` plugin skill).
 
 ## How to add something new (the convention)
 1. Build & test it in the lab (`~/projects/wiki-loop-lab/`).

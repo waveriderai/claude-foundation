@@ -17,6 +17,8 @@ Read this first. Universal, cross-project knowledge. Keep within one context win
 - [[product-generation-pipeline]] — agent teams (MetaGPT/OpenHands/CrewAI…) + workflow-vs-agent-vs-skill architecture for research→MVP→iterate. 2026-06-25
 - [[demand-validation]] — solo-operator playbook: test demand before building (Mom Test, fake-door, commitment ladder); MVP tools. 2026-06-25
 - [[growth-marketing]] — first 100→1000 users: channel focus, ungameable launch mechanics, AI-tooling reality check (PostHog/Umami). 2026-06-25
+- [[prediction-market-tools]] — worked example: Polymarket/Kalshi smart-money-tracker feasibility (APIs, US legality, CFTC, competitors). 2026-06-25
+- [[design-taste]] — escaping the generic "AI vibe-coded" look: taste-as-process (ground→forbid→one bold move), forbid-list, prompt patterns. 2026-06-25
 
 ## Ecosystem (reference)
 - [[autonomous-research-agents]] — AI-Scientist, autoloop, awesome-autoresearch. 2026-06-24
@@ -35,6 +37,8 @@ Read this first. Universal, cross-project knowledge. Keep within one context win
 - [[thinkers/martin-fowler]] — non-determinism as the shift; VibeSec (security must be structural). 2026-06-25
 - [[thinkers/swyx-latent-space]] — "AI Engineer" as a discipline; practitioner-discourse hub; agent-labs playbook. 2026-06-25
 - [[thinkers/tobi-lutke]] — Shopify CEO & builder; QMD (local-first markdown memory engine for agents, MCP) + reflexive-AI memo. 2026-06-25
+- [[thinkers/rauno-freiberg]] — Vercel design engineer; quality=patience+focus; "a solution with less"; master HTML/CSS/JS; details from real implementation. 2026-06-25
+- [[thinkers/emil-kowalski]] — taste is a trainable instinct (expose→absorb→apply); animate only with purpose; "sometimes the best animation is no animation". 2026-06-25
 
 ## Process & backlog
 - [[honest-ai-and-verification]] — anti-sycophancy + proof-over-vibes; basis for the CLAUDE.md honesty rules. 2026-06-25

@@ -13,7 +13,7 @@ clone 下來、跑一個腳本,就能得到同一套全域設定:工作原則、
 |---|---|---|
 | 工作原則 | `home-claude/CLAUDE.md` | 全域的工作方式(plan→review→execute、誠實/查證、選對工具)。 |
 | 地圖 | `home-claude/FOUNDATION.md` | 所有能力的索引,以及新東西該放哪。 |
-| Skills | `home-claude/skills/` | `new-project`、`ingest-source`、`learn-from-thinkers`、`optimize-prompt`、`validate-idea`。 |
+| Skills | `home-claude/skills/` | `new-project`、`ingest-source`、`learn-from-thinkers`、`optimize-prompt`、`validate-idea`、`design-taste`。 |
 | Hooks | `home-claude/hooks/` | `load-north-star`(注入專案目標)、`re-anchor`(定期檢查偏離)、`proof-gate`(擋下未測試的 push/merge)。 |
 | 知識 wiki | `home-claude/knowledge/` | context engineering、honest AI、需求驗證、自主研究等參考頁。 |
 | 專案模板 | `home-claude/templates/north-star.md` | `new-project` skill 用的目標/限制骨架。 |
@@ -69,6 +69,7 @@ cd claude-foundation
 | `/ingest-source` | 看到好文章/repo/某個人想存起來 | 研究它、萃取「思路」而非原文,寫成一頁知識存進 wiki。 |
 | `/learn-from-thinkers` | 想更新知識庫 | 檢查追蹤的 AI thinkers 有沒有新東西,只 ingest 新的,並回報能接到哪裡。 |
 | `/optimize-prompt` | 想把某個 prompt 調到最好(且有測試集) | ratchet loop:改一版→測分→比舊版好才留 → 把贏家 bake 進一個 skill。 |
+| `/design-taste` | 要做/重做任何視覺(UI、landing page、生成的素材、品牌) | 逼出不落俗套、有意圖的設計:先扣回主題、跑「AI 慣性」禁用清單、一個大膽動作其餘克制。網頁 UI 可搭配官方 `frontend-design` plugin。 |
 
 ### 知識 wiki——你的外接大腦
 

@@ -72,3 +72,9 @@ First batch, from the 2026-06-24 deep research. These are pointers/excerpts; tre
 - Lenny (first 1000 users) — https://www.lennysnewsletter.com/p/how-the-biggest-consumer-apps-got
 - Google AI content policy — https://developers.google.com/search/docs/fundamentals/using-gen-ai-content
 - HN Show HN — https://news.ycombinator.com/showhn.html ; PostHog — https://github.com/PostHog/posthog ; Umami — https://github.com/umami-software/umami
+
+## Prediction-market tools (deep research 2026-06-25)
+- Polymarket API docs — https://docs.polymarket.com/api-reference/introduction
+- Kalshi API/docs — https://docs.kalshi.com/welcome ; Data ToS — https://kalshi-public-docs.s3.amazonaws.com/kalshi-data-terms-of-service.pdf
+- CFTC Polymarket amended order — https://www.cftc.gov/media/12806 ; 17 CFR 4.14 — https://www.law.cornell.edu/cfr/text/17/4.14
+- jon-becker/prediction-market-analysis — https://github.com/jon-becker/prediction-market-analysis

@@ -94,3 +94,21 @@ QMD maps directly onto [[karpathy-llm-wiki]]/[[agent-memory-infra]]/[[local-infr
 growth). Key: channel FOCUS not spraying (Walling/First Round/Bullseye); HN/PH launches cant be gamed; Google
 does NOT penalize AI content (scaled-low-value is the trigger); NO AI marketing tool survived verification
 (treat as hype until tested); only survivors = OSS instrumentation PostHog + Umami 37.3k. Built validate-idea skill.
+
+## [2026-06-25] deep-research | prediction-market tracker feasibility (Polymarket/Kalshi)
+24 sources verified. NEW pages/prediction-market-tools. KEY: Polymarket Data API fully public no-auth (whale surface);
+US legality FLIPPED favorable (CFTC Amended Order 2025-11-25 → Polymarket US live 2025-12-03) — corrected my
+memory-based "US-illegal". Kalshi data ToS = personal/non-commercial only → commercial tracker needs license
+(idea-killer for Kalshi side). Pure analytics likely CTA-exempt (17 CFR 4.14(a)(9)) if impersonal + no execution.
+OPEN: competitor saturation + demand (build-in leaderboards good enough?) — test next.
+
+## [2026-06-25] deep-research | design-taste (escaping the "AI vibe-coded" look)
+22 verified claims (3 killed). NEW pages/design-taste + thinkers/rauno-freiberg + thinkers/emil-kowalski.
+Built design-taste SKILL (auto-invoked; builds on official frontend-design plugin). KEY INSIGHT: taste is a
+PROCESS not a look — hard-coding one aesthetic becomes the next tell (cream+serif+terracotta proved this).
+Framework: ground in subject → forbid AI default convergence → one bold move + restraint. House default =
+precision-minimal (Linear/Vercel/Rauno). Top tells: shadcn/Tailwind defaults + indigo/purple gradient (root
+cause: Tailwind UI bg-indigo-500 → training data; Wathan apologized Aug 2025); Inter/Roboto/system + over-chosen
+Space Grotesk; centered-hero+3-icon-cards; everything border-radius 0.5rem. Tracked Freiberg + Kowalski in
+sources/tracked.md so learn-from-thinkers keeps the (time-sensitive) tells current. OPEN: cross-medium
+(images/posts/brand) under-evidenced — applied by analogy, refine later.

@@ -1,7 +1,7 @@
 {
   "name": "claude-foundation",
   "version": "0.1.0",
-  "description": "Anti-drift Claude Code foundation: north-star + re-anchor + proof-gate hooks and the new-project / ingest-source / learn-from-thinkers / optimize-prompt / validate-idea skills.",
+  "description": "Anti-drift Claude Code foundation: north-star + re-anchor + proof-gate hooks and the new-project / ingest-source / learn-from-thinkers / optimize-prompt / validate-idea / design-taste skills.",
   "author": { "name": "claude-foundation" },
   "hooks": "./hooks/hooks.json"
 }
