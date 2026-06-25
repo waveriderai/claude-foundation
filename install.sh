@@ -47,6 +47,7 @@ copy FOUNDATION.md
 copy statusline.py
 copy statusline.sh
 copy skills
+copy workflows
 copy hooks
 copy templates
 copy scripts
@@ -66,6 +67,13 @@ echo "Done."
 echo "  - Framework files installed under $CLAUDE_HOME"
 echo "  - settings.json written with hook paths -> $CLAUDE_HOME/hooks"
 echo "  - Your credentials / history / sessions (if any) were left untouched."
+
+# Self-check: show exactly what landed, so a missing skill/workflow is obvious.
+echo
+echo "Installed:"
+echo "  skills:    $(ls "$CLAUDE_HOME/skills" 2>/dev/null | tr '\n' ' ')"
+echo "  workflows: $(ls "$CLAUDE_HOME/workflows" 2>/dev/null | sed 's/\.js$//' | tr '\n' ' ')"
+echo "  hooks:     $(ls "$CLAUDE_HOME/hooks" 2>/dev/null | grep -E '\.(sh|py)$' | tr '\n' ' ')"
 echo
 echo "Note: the anti-drift hooks need python3 on PATH. The daily-learn script (optional) needs the"
 echo "      'claude' CLI on PATH or \$CLAUDE_BIN set. Restart Claude Code to load the new settings."

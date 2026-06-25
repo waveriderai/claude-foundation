@@ -13,11 +13,13 @@ clone 下來、跑一個腳本,就能得到同一套全域設定:工作原則、
 |---|---|---|
 | 工作原則 | `home-claude/CLAUDE.md` | 全域的工作方式(plan→review→execute、誠實/查證、選對工具)。 |
 | 地圖 | `home-claude/FOUNDATION.md` | 所有能力的索引,以及新東西該放哪。 |
-| Skills | `home-claude/skills/` | `new-project`、`ingest-source`、`learn-from-thinkers`、`optimize-prompt`、`validate-idea`、`design-taste`。 |
+| Skills | `home-claude/skills/` | `new-project`、`ingest-source`、`learn-from-thinkers`、`optimize-prompt`、`validate-idea`、`design-taste`、`deep-research`。 |
+| Workflows | `home-claude/workflows/` | `deep-research`——確定性的 Scope→搜尋→抓取→對抗式驗證→綜整研究 harness(`Workflow({name:'deep-research'})`)。 |
 | Hooks | `home-claude/hooks/` | `load-north-star`(注入專案目標)、`re-anchor`(定期檢查偏離)、`proof-gate`(擋下未測試的 push/merge)。 |
 | 知識 wiki | `home-claude/knowledge/` | context engineering、honest AI、需求驗證、自主研究等參考頁。 |
 | 專案模板 | `home-claude/templates/north-star.md` | `new-project` skill 用的目標/限制骨架。 |
 | 自學排程 | `home-claude/scripts/` | `check-sources.py`(免費、無 LLM 的變動偵測)+ `daily-learn.sh`(選用的 cron ingest)。 |
+| 維護 | `home-claude/scripts/` | `sync-plugin.sh`(把正本 `home-claude/` 鏡像到 `plugin/`)+ `doctor.sh`(parity + 幽靈引用健檢)。 |
 | Statusline | `home-claude/statusline.{py,sh}` | 模型 / context% / 訂閱用量 statusline。 |
 | 設定 | `home-claude/settings.template.json` | 接好 hooks + statusline(路徑在安裝時填入)。 |
 
@@ -70,6 +72,7 @@ cd claude-foundation
 | `/learn-from-thinkers` | 想更新知識庫 | 檢查追蹤的 AI thinkers 有沒有新東西,只 ingest 新的,並回報能接到哪裡。 |
 | `/optimize-prompt` | 想把某個 prompt 調到最好(且有測試集) | ratchet loop:改一版→測分→比舊版好才留 → 把贏家 bake 進一個 skill。 |
 | `/design-taste` | 要做/重做任何視覺(UI、landing page、生成的素材、品牌) | 逼出不落俗套、有意圖的設計:先扣回主題、跑「AI 慣性」禁用清單、一個大膽動作其餘克制。網頁 UI 可搭配官方 `frontend-design` plugin。 |
+| `/deep-research` | 想要某主題的深度、多來源、查證過的報告 | 驅動 `deep-research` workflow:5 個搜尋角度 → 抓取並萃取主張 → 3 票對抗式驗證 → 附出處綜整。 |
 
 ### 知識 wiki——你的外接大腦
 

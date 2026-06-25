@@ -16,6 +16,7 @@ PROJECT  <any work repo>/            inherits global + its own north-star.md & .
 | Working principles | `~/.claude/CLAUDE.md` | global how-we-work rules | ✅ done |
 | Knowledge (memory) | `~/.claude/knowledge/` | universal Wiki: thinkers, patterns, guides | ✅ done |
 | Skills | `~/.claude/skills/<name>/SKILL.md` | reusable procedures Claude can invoke | ✅ done |
+| Workflows | `~/.claude/workflows/<name>.js` | deterministic multi-agent harnesses (`Workflow({name})`) | ✅ done |
 | Subagents | `~/.claude/agents/<name>.md` | delegated specialists | ⬜ later |
 | Commands | `~/.claude/commands/<name>.md` | slash commands (legacy; prefer skills) | ⬜ optional |
 | Hooks | `~/.claude/hooks/` + `settings.json` | anti-drift: north-star loader, re-anchor; **proof-gate** (PreToolUse: blocks untested push/merge) | ✅ done |
@@ -29,6 +30,13 @@ PROJECT  <any work repo>/            inherits global + its own north-star.md & .
 - `optimize-prompt` — the prompt-opt ratchet loop (one-time factory → bake winner into a Skill).
 - `validate-idea` — run the demand-validation playbook on an idea → honest go/no-go (from [[demand-validation]]).
 - `design-taste` — apply distinctive, non-AI-default taste to any UI/prototype/pipeline/brand (from [[design-taste]]; builds on the `frontend-design` plugin skill).
+- `deep-research` — multi-source, fact-checked research report (thin skill → drives the `deep-research` **workflow**).
+
+## Installed workflows
+- `deep-research` (`~/.claude/workflows/deep-research.js`) — Scope → Search → Fetch → 3-vote adversarial
+  Verify → Synthesize. Invoke with `Workflow({ name: 'deep-research', args: '<question>' })`, or via the
+  `deep-research` skill. Run `scripts/sync-plugin.sh` after editing it so the plugin mirror stays in sync;
+  `scripts/doctor.sh` checks parity + that no skill/workflow is referenced-but-not-shipped.
 
 ## How to add something new (the convention)
 1. Build & test it in the lab (`~/projects/wiki-loop-lab/`).
